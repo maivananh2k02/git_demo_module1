@@ -1,0 +1,28 @@
+fieldset{
+    width: 600px;
+    height: 100px;
+    background-color: white;
+    margin-top: 200px;
+    margin-left: 450px;
+    text-align: center;
+    border-radius: 20px;
+}
+body{
+    background-image: url(https://img.thuthuattinhoc.vn/uploads/2019/01/27/hinh-anh-cac-loai-tien-tren-the-gioi_094629576.jpg) ;
+    background-repeat:no-repeat ;
+    background-size: 100% ;
+}
+
+#xanh{
+    font-weight: bold;
+    color: blue;
+}
+button{
+    border-color: aquamarine;
+    border-radius: 10px;
+}
+fieldset{
+    background-image: url("https://hinh365.com/wp-content/uploads/2020/06/thu-vien-anh-chat-luong-cao-voi-khoang-119-652-hinh-anh-ve-dong-tien-vang-8.jpg");
+    background-size: 40px 40px;
+}
+

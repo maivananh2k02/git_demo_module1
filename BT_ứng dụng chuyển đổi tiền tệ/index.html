@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>app quy đổi tiền tệ phiên bản pc</title>
+    <link rel="stylesheet" href="style/style.css">
+    <script src="my/my.js"></script>
+</head>
+<body>
+    <fieldset id="form">
+<b>$</b><input oninput="inputNumber()" onclick="dongBo()" id="tien" type="number" placeholder="tiền tiền"  >
+<b>From</b><select  id="from">
+    <option value="23000">Vietnam</option>
+    <option value="1">USD</option>
+</select>
+<b>To</b><select id="to">
+    <option value="1">USD</option>
+    <option value="23000">Vietnam</option>
+</select><br><br>
+<button onclick="myClick()" onmouseover="over()" onmouseout="out()" id="sk">Quy đổi</button>
+<br>
+<p id="xanh">Kết quả:<span id="kq"></span></p>
+    </fieldset>
+</body>
+
+</html>

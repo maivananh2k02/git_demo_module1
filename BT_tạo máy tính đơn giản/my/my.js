@@ -1,16 +1,15 @@
 
-    let a=document.getElementById('soDau').value;
-    let b=document.getElementById('soHai').value;
-function total() {
-    let total=a+b;
-    document.getElementById('kq').innerHTML=total;
+function total(putt,b) {
+    document.getElementById('kq').value=a+b;
 }
-function minus() {
+function minus(a,b) {
     
 }
-function tich() {
+function tich(a,b) {
     
 }
-function thuong() {
+function thuong(a,b) {
     
 }
+let putt=document.getElementById('sod').value;
+let b=document.getElementById('soHai').innerHTML;

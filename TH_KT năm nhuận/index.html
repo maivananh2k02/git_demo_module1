@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let b = +prompt('số năm bạn muốn kiểm tra');
+    if (b % 4 === 0) {
+        if (b % 100 === 0) {
+            if (b % 400 !== 0) {
+                alert(b + ' không phải là năm nhuận')
+            } else {
+                alert(b + ' là năm nhuận')
+            }
+        }else
+            {
+                alert(b + ' là năm nhuận')
+            }
+    }else {
+        alert(b+' không phải là năm nhuận ')
+    }
+</script>
+</body>
+</html>

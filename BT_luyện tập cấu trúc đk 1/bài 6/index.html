@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = +prompt('số tiền bán hàng');
+    let result;
+    if (a <= 0) {
+        result = 0;
+        alert(result + ' là số tiền hoa hồng của bạn')
+    } else if (a <= 200000) {
+        result = a * 0.03
+        alert(result + ' là số tiền hoa hồng')
+    } else if (a<=500000){
+        result=200000*0.03+(a-200000)*0.05
+        alert(result+' là số tiền hoa hồng' )
+    }else {
+        result=200000*0.03+300000*0.05+(a-500000)*0.1
+        alert(result+' là số tiền hoa hồng')
+    }
+</script>
+</body>
+</html>

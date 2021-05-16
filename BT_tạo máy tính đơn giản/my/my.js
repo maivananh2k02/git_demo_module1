@@ -1,15 +1,23 @@
 
-function total(putt,b) {
-    document.getElementById('kq').value=a+b;
+function total() {
+    let a=document.getElementById('sod').value;
+    let b=document.getElementById('soHai').value;
+    document.getElementById('kq').innerText=parseInt(a)+parseInt(b);
 }
-function minus(a,b) {
-    
+function minus() {
+    let a=document.getElementById('sod').value;
+    let b=document.getElementById('soHai').value;
+    document.getElementById('kq').innerText=parseInt(a)-parseInt(b);
 }
-function tich(a,b) {
-    
+function tich() {
+    let a=document.getElementById('sod').value;
+    let b=document.getElementById('soHai').value;
+    document.getElementById('kq').innerText=parseInt(a)*parseInt(b);
 }
-function thuong(a,b) {
-    
+function thuong() {
+    let a=document.getElementById('sod').value;
+    let b=document.getElementById('soHai').value;
+    document.getElementById('kq').innerText=parseInt(a)/parseInt(b);
 }
-let putt=document.getElementById('sod').value;
-let b=document.getElementById('soHai').innerHTML;
+
+// total()

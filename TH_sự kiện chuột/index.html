@@ -3,21 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+        <style>
+            #anh{
+                position: relative;
+                left: 100px;
+            }
+        </style>
 </head>
 <body>
-<img id="anh" src="https://vcdn-vnexpress.vnecdn.net/2018/08/24/1-7962-1535103592.jpg" alt="" style="width: 200px;height: 200px"><br>
-<button type="button" value="click Me" onclick="moveright()">click Me</button>
+<img id="anh" src="https://vcdn-vnexpress.vnecdn.net/2018/08/24/1-7962-1535103592.jpg" alt=""
+     style="width: 200px;height: 200px"><br>
+<button type="button" value="click Me" onclick="moveleft()"><--next to</button>
+<button type="button" value="click Me" onclick="moveright()">next to --></button>
 <script>
-    let ojimg=document.getElementById('anh');
-    function clickMe() {
-
-        ojimg.style.position='relative';
-        ojimg.style.left='0px';
-    }
+    let img = document.getElementById('anh');
     function moveright() {
-        ojimg.style.left = parseInt(ojimg.style.left) + 10+'px' ;
+
+        img.style.left = parseInt(img.style.left) + 10 + 'px';
     }
-    window.onload= clickMe()
+
+    function moveleft() {
+        img.style.left = parseInt(img.style.left) - 10 + 'px';
+    }
 
 </script>
 </body>

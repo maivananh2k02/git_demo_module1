@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = +prompt('a là điểm kiểm tra miệng lần 1');
+    let b = +prompt('b là điểm kiểm tra miệng lần 2');
+    let c = +prompt('c là điểm kiểm tra 15 phút lần 1');
+    let d = +prompt('d là điểm kiểm tra 15 phút lần 2');
+    let e = +prompt('e là điểm kiểm tra tra giữa kì');
+    let f = +prompt('f là điểm kiểm tra giữa kì ');
+    T=(a+b+c+d+2*e+3*f)/9
+    if (T>=0&&T<5.0){
+        alert('Là học sinh Yếu')
+    }else if(T<6.5){
+        alert('là học sinh trung bình')
+    }else if(T<8.0){
+        alert('là học sinh khá')
+    }else {
+        alert('là học sinh xuất sắc')
+    }
+</script>
+</body>
+</html>

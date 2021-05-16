@@ -1,0 +1,26 @@
+h1{
+    position: absolute;
+    top: 150px;
+    right: 500px;
+    color: red;
+    font-size: 50px;
+}
+body{
+    background-image: url("https://i.pinimg.com/originals/51/93/20/519320dae860264387aa149bba0fb697.gif");
+    background-repeat: no-repeat;
+    background-size: 1390px 625px ;
+}
+#btnYes{
+    position: absolute;
+    top: 280px;
+    left: 520px;
+    width: 80px;
+    height: 40px;
+}
+#btnNo{
+    position: absolute;
+    top: 280px;
+    left: 700px;
+    width: 80px;
+    height: 40px;
+}

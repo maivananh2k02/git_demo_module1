@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = +prompt("số kwh");
+    T=a*1.678
+    P=50*1.678+(a-50)*1.734;
+    Q=50*1.678+50*1.734+(a-100)*2.014;
+    X=50*1.678+50*1.734+100*2.014+(a-200)*2.536;
+    Z=50*1.678+50*1.734+100*2.014+100*2.536+(a-300)*2.834;
+    w=50*1.678+50*1.734+100*2.014+100*2.536+100*2.834+(a-400)*2.927;
+    if (a>=0&&a<51){
+        alert('giá điện là: ' + T)
+    }else if(a<101){
+        alert('Giá điện là: ' + P)
+    }else if (a<201){
+        alert('Giá điện là: ' +Q)
+    }else if (a<301){
+        alert('Giá điện là: ' +X)
+    }else if (a<401){
+        alert('Giá điện là: ' +Z)
+    }else {
+        alert('Giá điện là: ' +w)
+    }
+</script>
+</body>
+</html>

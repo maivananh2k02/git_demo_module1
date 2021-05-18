@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let number=+prompt('số Fibonaci bạn muốn hiển thị')
+    let a = 0;
+    let b = 1;
+    let total = 0;
+    for (let i=1;i<=number;i++){
+        if (total%5===0){
+            alert(total+' là số Fibonaci đầu tiên chia hết cho 5')
+            break;
+        }
+        a=b;
+        b=total;
+        total=a+b;
+    }
+</script>
+</body>
+</html>

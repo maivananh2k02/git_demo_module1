@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let number=+prompt(' hiển thị bao nhiêu số chia hết cho 7');
+  let constan=0;
+  let total=0;
+  for (let i=1;i<=number;i++){
+    if (constan%7===0){
+      total+=constan
+        constan+=7
+    }
+  }
+  document.write('tổng của số chia hết cho 7 là : '+total)
+
+</script>
+</body>
+</html>

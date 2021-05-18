@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = +prompt('nhiệt độ bạn muốn thay đổi');
+    if (a >= 20 && a <= 100) {
+        alert(a + ' nhiệt độ phù hợp đó')
+    }
+    while (a > 100) {
+        alert('nhiệt độ quá cao cần hạ thấp xuống')
+        a = +prompt('nhiệt độ bạn muốn thay đổi');
+    }
+    while (a<20){
+        alert('nhiệt độ quá cao cần tăng nhiệt độ lên')
+        a = +prompt('nhiệt độ bạn muốn thay đổi');
+    }
+</script>
+</body>
+</html>

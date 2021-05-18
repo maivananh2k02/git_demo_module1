@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let result='';
+    result =result+ '<table border="1px" cellspacing="0px">'
+    for (let i = 1; i <= 9; i++) {
+        result =result+ '<tr>'
+        for (let j = 1; j <= 9; j++) {
+            result =result+ '<td width="50">' + i * j + '</td>'
+        }
+        result =result+ '</tr>'
+    }
+    result =result+ '</table>'
+    document.write(result)
+</script>
+</body>
+</html>

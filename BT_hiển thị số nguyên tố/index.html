@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a=+prompt(' số nguyên tố bạn muốn hiển thị');
+    function isSoNT() {
+        let number=3;
+        let count=2;
+        let flag=true
+        for (let i=1;i<=a;i++){
+            while (count<number){
+                if (number%count===0){
+                    flag=false;
+                }
+                count++
+            }
+            return true
+            number++
+        }
+        if (flag){
+            document.write(number +' là số nguyên tố')
+        }
+    }
+isSoNT()
+</script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let number=+prompt('giai thừa');
+  let total=1;
+  let count=0;
+  if (number===0){
+    document.write('0!='+total)
+  }
+  for(let i=1;i<=number;i++){
+    total*=i
+      count++
+  }
+  document.write( count +'!='+total)
+</script>
+</body>
+</html>

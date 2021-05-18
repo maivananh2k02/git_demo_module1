@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        td{
+            width:80px ;
+            color: cornsilk;
+            background-color: darkmagenta;
+        }
+    </style>
+</head>
+<body>
+<script>
+    let result='';
+    result += '<table border="1px" cellspacing="0px">';
+    for (let i = 1; i <= 9; i++) {
+        result += '<tr>'
+        for (let j = 1; j <= 9; j++) {
+            result += '<td>' + j + 'x' + i + '=' + j * i + '</td>'
+        }
+        result += '</tr>'
+    }
+    result += '</table>'
+    document.write(result)
+</script>
+</body>
+</html>

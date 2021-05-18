@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button onclick="play()">bắt đầu</button>
+<script>
+    function play() {
+        let b=Math.floor(Math.random()*100);
+        console.log(b)
+        for (let i=1;i<=3;i++){
+            let a=+prompt('số bạn muốn đoán')
+            if (a===b){
+                alert('bạn đã đoán đúng')
+                break;
+            }else {
+                alert('mời bạn nhập lại số lần còn '+(3-i))
+            }
+        }
+        alert(' end game')
+    }
+</script>
+</body>
+</html>

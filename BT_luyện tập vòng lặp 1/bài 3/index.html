@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let number=+prompt('số Fibonaci muốn hiển thị');
+    let total=0;
+    let a=0;
+    let b=1;
+    for (let i=1;i<=number;i++){
+        document.write(total+' là số Fibonaci.<br>')
+        a=b;
+        b=total;
+        total=a+b;
+    }
+</script>
+</body>
+</html>

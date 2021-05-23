@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let arr=[];
+  for (let i=0;i<=10;i++){
+    arr.push(-5+i)
+  }
+  document.write('<p>arr=['+arr+']</p>')
+  function check() {
+    let number=+prompt('số bạn muốn kiểm tra');
+    for(let j=0;j<arr.length;j++){
+      if (number===arr[j]){
+        return alert(arr[j]+' có ở trong mảng và ở vị trí: '+j)
+      }
+    }
+    return alert('phần tử bạn nhập không hề có nhé ')
+  }
+  check()
+
+</script>
+</body>
+</html>

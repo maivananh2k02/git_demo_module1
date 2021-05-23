@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr = [];
+    let total = +prompt('bạn muốn nhập bao nhiêu số');
+    for (let i = 1; i <= total; i++) {
+        let number = +prompt('mời bạn nhập');
+        arr.push(number);
+    }
+    document.write('arr=['+arr+']')
+    document.write(arr.sort(function(a, b){return b - a}));
+</script>
+</body>
+</html>

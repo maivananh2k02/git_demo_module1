@@ -3,12 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-        <style>
-            #anh{
-                position: relative;
-                left: 100px;
-            }
-        </style>
 </head>
 <body>
 <img id="anh" src="https://vcdn-vnexpress.vnecdn.net/2018/08/24/1-7962-1535103592.jpg" alt=""
@@ -25,7 +19,11 @@
     function moveleft() {
         img.style.left = parseInt(img.style.left) - 10 + 'px';
     }
-
+    function anhNen() {
+        img.style.position='relative'
+        img.style.left=100+'px';
+    }
+window.onload=anhNen()
 </script>
 </body>
 </html>

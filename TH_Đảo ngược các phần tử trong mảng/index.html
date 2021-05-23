@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let total=+prompt('bạn muốn hiển thị bao nhiêu số nhỉ');
+  let arr=[];
+  for (let i=1;i<=total;i++){
+    let number=+prompt('số ? <3');
+    arr.push(number);
+  }
+  function sapXep() {
+    //đảo ngược nhé
+    let n='';
+    for(let j=0;j<Math.floor(arr.length/2);j++){
+      n=arr[j]
+      arr[j]=arr[arr.length-(j+1)]
+      arr[arr.length-(j+1)]=n
+    }
+    document.write(arr)
+  }
+  sapXep()
+</script>
+</body>
+</html>

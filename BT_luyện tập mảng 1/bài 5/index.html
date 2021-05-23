@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let total = +prompt('bạn muốn nhập bao nhiêu kí tự');
+    let arr = [];
+    for (let i = 1; i <= total; i++) {
+        let number = prompt('bạn muốn nhập số nào nào ??');
+        arr.push(number);
+    }
+    document.write('arr=['+arr+']')
+    let count = 0;
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] < 0) {
+            count++
+        }
+    }
+    document.write('số nguyên âm : ' + count)
+</script>
+</body>
+</html>

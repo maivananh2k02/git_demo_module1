@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let total = prompt('bạn muốn nhập bao nhiêu số');
+    let arr = [];
+    for (let i = 1; i <= total; i++) {
+        let number =+prompt('số ? <3')
+        arr.push(number)
+    }
+    document.write('arr=['+arr+']')
+    let max=arr[0];
+    for (let k=1;k<arr.length;k++){
+        if (max<arr[k]){
+            max=arr[k]
+        }
+    }
+    document.write('giá trị lớn nhất trong số bạn nhập là : '+max)
+</script>
+</body>
+</html>

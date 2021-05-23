@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let total = +prompt('bạn muốn nhập bao nhiêu số vào mảng đầu tiên');
+  let arr = [];
+  for (let i = 1; i <= total; i++) {
+    let number = prompt('bạn muốn nhập số nào nào ??');
+    arr.push(number);
+  }document.write('<br>arr1=['+arr+']')
+  let total2 = +prompt('bạn muốn nhập bao nhiêu số vào mảng thứ 2');
+  let arr2 = [];
+  for (let i = 1; i <= total2; i++) {
+    let number2 = prompt('bạn muốn nhập số nào nào ??');
+    arr2.push(number2);
+  }document.write('<br>arr2=['+arr2+']')
+  let arr3=[];
+  document.write('<br>arr3=['+arr3.concat(arr,arr2)+']')
+</script>
+</body>
+</html>

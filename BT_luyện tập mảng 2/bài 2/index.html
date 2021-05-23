@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let total=+prompt('bạn muốn nhập bao nhiêu kí tự');
+  let arr=[];
+  for (let i=1;i<=total;i++){
+    let number=prompt('kí tự bạn muốn hiển thị ?');
+    arr.push(number)
+  }
+  document.write('arr=['+arr+']')
+  let b=arr.reverse();
+  document.write('<br>kết quả hiển thị là sau khi đảo ngược là :'+b.join(''));
+</script>
+</body>
+</html>

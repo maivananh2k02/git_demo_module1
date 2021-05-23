@@ -1,0 +1,17 @@
+body{
+
+   background-image: url(https://topicanative.edu.vn/wp-content/uploads/2019/12/tu-dien-tieng-anh-thong-dung-topica.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 630px;
+}
+fieldset{
+    position: absolute;
+    top: 200px;
+    left: 400px;
+    background-color: aliceblue;
+}
+button{
+    position: relative;
+    top: 3px;
+    left: 210px;
+}

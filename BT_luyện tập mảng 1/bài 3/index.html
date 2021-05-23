@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let total = +prompt('bạn muốn nhập bao nhiêu số');
+    let arr = [];
+    for (let i = 1; i <= total; i++) {
+        let number =+prompt('số ? <3')
+        arr.push(number)
+    }
+    document.write('arr=['+arr+']')
+    let sum=0;
+    let max=arr[0];
+    for (let i=1;i<arr.length;i++){
+        if (max<arr[i]){
+            max=arr[i]
+        }
+        sum+=arr[i]
+    }
+
+    document.write('Giá trị lớn nhất là : '+max);
+    document.write('<br>giá trị trung bình là : '+(sum+arr[0])/total)
+</script>
+</body>
+</html>

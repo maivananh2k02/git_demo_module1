@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let arr=[];
+  let total=+prompt('bạn muốn hiển thị bao nhiêu số');
+  for (let i=1;i<=total;i++){
+    let number=+prompt(' <3');
+    arr.push(number)
+  }
+  let max=arr[0]
+  function check() {
+    for (let j=0;j<arr.length;j++){
+      if (max<arr[j]){
+        max=arr[j];
+      }
+    }
+    alert(max+' là giá trị lớn nhất trong mảng')
+  }
+  check()
+</script>
+</body>
+</html>

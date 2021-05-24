@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let number=+prompt('giai thừa của');
+  function giaiThua() {
+    if (number===0){
+      return alert('0!=1')
+    }
+    let total=1;
+    count=0;
+    for (let i=1;i<=number;i++){
+      total*=i;
+      count++;
+    }
+    return alert(count+'!='+total);
+  }
+  giaiThua();
+</script>
+</body>
+</html>

@@ -3,10 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <script src="js/my.js"></script>
 </head>
 <body>
-<script>
-  
-</script>
+<input id="inp" type="number"/>
+From:
+<select id="from">
+    <option value="1">Feet</option>
+    <option value="0.305">Meter</option>
+</select>
+To:
+<select id="to">
+    <option value="0.305">Meter</option>
+    <option value="1">Feet</option>
+</select>
+<button onclick="getClick()">quy đổi</button>
+Kết quả:<p id="out"></p>
 </body>
 </html>

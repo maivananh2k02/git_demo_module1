@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let total=+prompt('bạn muốn nhập bao nhiêu số');
+  function array() {
+    let arr=[];
+    for (let i=0;i<total;i++){
+      let number=+prompt('số bạn muốn nhập vào');
+      arr.push(number)
+    }
+    return alert('Đảo ngược là :arr=['+arr.reverse()+']')
+  }
+  array();
+</script>
+</body>
+</html>

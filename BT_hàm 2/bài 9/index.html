@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = prompt('kí tự cần kiểm tra số lần xuất hiện trong mảng');
+    let count = 0;
+
+    function check() {
+        let arr = ['g', 'j', 'h', 'd', 'j', 'h', 's', 'd', 'g', 'w', 'h', 'd', 'f', 's', 'f', 'h', 'c', 'j', 's', 'a', 'u', 'w', 'y', 'd', 'g', 'q', 'f', '1', '2', '1', '5', '4', '2', '3'];
+        for (let i = 0; i < arr.length; i++) {
+            if (a === arr[i]) {
+                count++;
+            }
+        }
+        return count;
+    }
+
+    check();
+    if (count > 0) {
+        alert('số lần xuất hiện trong mảng là ' + count);
+    } else {
+        alert(-1);
+    }
+</script>
+</body>
+</html>

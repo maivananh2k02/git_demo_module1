@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a=prompt('số thứ nhất');
+    let b=prompt('số thứ hai');
+    let c=prompt('số thứ ba');
+    function check() {
+        if (a<b&&a<c){
+            return alert(a+' là số nhỏ nhất');
+        }
+        if (b<a&&b<c){
+            return alert(b+' là số nhỏ nhất');
+        }
+        if (a>c&&b>c){
+            return alert(c+' là số nhỏ nhất');
+        }
+    }
+    check();
+</script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    class Temperature {
+        constructor(C) {
+            this.temperature = C;
+        }
+
+        get Temp() {
+            return this.temperature;
+        }
+
+        changeF() {
+            return ((9 / 5) * this.temperature + 32);
+        }
+
+        changeKenvin() {
+            return (this.temperature + 273.15);
+        }
+    }
+
+    let temp = new Temperature(25);
+    console.log(temp.changeF())
+    document.write(`${temp.Temp} chuyen doi sang do F la : ${temp.changeF()} <br>`);
+    document.write(`${temp.Temp} chuyen doi sang do Kenvin la : ${temp.changeKenvin()}`);
+</script>
+</body>
+</html>
